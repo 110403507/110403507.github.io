@@ -23,4 +23,8 @@
 * 5種特效
     - 寫在index.html中了
 
+* pictures are from
+    - [pic1] (https://www.pinterest.com/pin/109986415888763444/)
+    - [pic2] (https://www.pinterest.com/pin/577586720956828597/)
+
 ## 期末快樂~
