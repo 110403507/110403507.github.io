@@ -16,7 +16,7 @@
     - tr
     - td
     - button
-    - iframe
+    - footer
 * 2種路徑顯示圖片
     - pic1用絕對路徑
     - pic2用相對路徑
