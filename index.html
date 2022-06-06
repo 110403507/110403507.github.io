@@ -38,10 +38,6 @@
             <button class = "btn-back hover" value="pic2" onclick="showpic('pic2', 1)" >pic2</button>
             
         </div>
-
-        <div class="frame">
-            <iframe id="resume" style="display: none; width: 100%;" src="resume.pdf" type="application/pdf" ></iframe> <!-- 放pdf檔案width:100%(他只能看到一小條跟一頁是正確的，一小條是因為我調不到一個滿版的位置) -->
-        </div>
         
         <script>
             var pic =[false, false]
@@ -58,12 +54,12 @@
                 }
             }
             function havefun(){
-                if(flag<1){
+                if(flag<10){
                     flag++;
                     alert("click click click");
                 }
-                else if(flag==1){
-                    document.getElementById("resume").style.display='';
+                else if(flag==10){
+                    alert("yeah");
                 }
             }
         </script>
