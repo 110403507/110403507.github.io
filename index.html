@@ -8,10 +8,10 @@
     <body>
         
         
-        <div class="left-block">
+        <div class="left-block"> <!-- 左邊框框放圖片 -->
             <div class="tenor-gif-embed" data-postid="24235754" data-share-method="host" data-aspect-ratio="0.665625" data-width="100%"><a href="https://tenor.com/view/gawr-gura-dino-gawr-gura-dino-dinosaur-gif-24235754">Gawr Gura Dino Dinosaur GIF</a>from <a href="https://tenor.com/search/gawr+gura+dino-gifs"></a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 
-            <div id="pic1" style="display:  none;" >
+            <div id="pic1" style="display:  none;" > <!-- 一併解釋display: none時不顯示 -->
                 <img src="./pics/gurapic1.jpg" >
             </div>
             <div id="pic2" style="display: none;" >
@@ -19,7 +19,7 @@
             </div>
             
         </div>
-        <div class="right-block">
+        <div class="right-block"> <!-- 右邊框框放文字 -->
             <h1>hello</h1>
             <table class="text">
                 <tbody>
@@ -33,14 +33,14 @@
                     </tr>
                 </tbody>
             </table>
-            <button class="btn-back hover" value="back" onclick="havefun()">click me to have suprise</button>
+            <button class="btn-back hover" value="back" onclick="havefun()">click me to have suprise</button> <!-- 按鈕樣式設定 -->
             <button class = "btn-back hover" value="pic1" onclick="showpic('pic1', 0)" >pic1</button>
             <button class = "btn-back hover" value="pic2" onclick="showpic('pic2', 1)" >pic2</button>
             
         </div>
 
         <div class="frame">
-            <iframe id="resume" style="display: none; width: 100%;" src="resume.pdf" type="application/pdf" ></iframe>
+            <iframe id="resume" style="display: none; width: 100%;" src="resume.pdf" type="application/pdf" ></iframe> <!-- 放pdf檔案width:100%(他只能看到一小條跟一頁是正確的，一小條是因為我調不到一個滿版的位置) -->
         </div>
         
         <script>
@@ -75,6 +75,21 @@
         </p>
     </footer>
 </html>
+
+<!--
+以上有至少五個類別的css，css檔案中包括的樣式設定也超過五個(舉例: 
+  overflow: hidden;
+  background: transparent;
+  position: relative;
+  padding: 8px 50px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1em;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin: 5px 0px;
+這邊有10個(.btn-back)
+-->
 
 
 
