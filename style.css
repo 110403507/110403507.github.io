@@ -40,9 +40,3 @@ footer{
     width:30%;
     z-index: 1;
 }
-.frame{
-    position: absolute;
-    width: 100%;
-    height: auto;
-    z-index: 2;
-}
