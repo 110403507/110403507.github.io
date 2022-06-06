@@ -1,0 +1,90 @@
+
+   
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'> 
+        <link rel="stylesheet" href="./style.css">
+        <title>welcome page</title>
+    </head>
+    <body>
+        
+        
+        <div class="left-block"> <!-- 左邊框框放圖片 -->
+            <div class="tenor-gif-embed" data-postid="24235754" data-share-method="host" data-aspect-ratio="0.665625" data-width="100%"><a href="https://tenor.com/view/gawr-gura-dino-gawr-gura-dino-dinosaur-gif-24235754">Gawr Gura Dino Dinosaur GIF</a>from <a href="https://tenor.com/search/gawr+gura+dino-gifs"></a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+            <div id="pic1" style="display:  none;" > <!-- 一併解釋display: none時不顯示 -->
+                <img src="./pics/gurapic1.jpg" >
+            </div>
+            <div id="pic2" style="display: none;" >
+                <img src="pics/gurapic2.jpg" >
+            </div>
+            
+        </div>
+        <div class="right-block"> <!-- 右邊框框放文字 -->
+            <h1>hello</h1>
+            <table class="text">
+                <tbody>
+                    <tr>
+                        <td>name</td>
+                        <td>朱巽葦</td>
+                    </tr>
+                    <tr>
+                        <td>id</td>
+                        <td>110403507</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="btn-back hover" value="back" onclick="havefun()">click me to have suprise</button> <!-- 按鈕樣式設定 -->
+            <button class = "btn-back hover" value="pic1" onclick="showpic('pic1', 0)" >pic1</button>
+            <button class = "btn-back hover" value="pic2" onclick="showpic('pic2', 1)" >pic2</button>
+            
+        </div>
+        
+        <script>
+            var pic =[false, false]
+            var f = false;
+            var flag= 0;
+            function showpic(pic_id, num){
+                if(pic[num]==true){
+                    pic[num] = false;
+                    document.getElementById(pic_id).style.display='none';
+                }
+                else{
+                    pic[num] = true;
+                    document.getElementById(pic_id).style.display='';
+                }
+            }
+            function havefun(){
+                if(flag<10){
+                    flag++;
+                    alert("click click click");
+                }
+                else if(flag==10){
+                    alert("yeah");
+                }
+            }
+        </script>
+
+    </body>
+    <footer>
+        <p>
+            created by 110403507 MIS 1A
+        </p>
+    </footer>
+</html>
+
+<!--
+以上有至少五個類別的css，css檔案中包括的樣式設定也超過五個(舉例: 
+  overflow: hidden;
+  background: transparent;
+  position: relative;
+  padding: 8px 50px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1em;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin: 5px 0px;
+這邊有10個(.btn-back)
+-->
