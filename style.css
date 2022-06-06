@@ -14,9 +14,10 @@ h1{
     right: 6px;
     top: 20%;
     padding: 10px;
+    z-index: 1;
 }
 footer{
-    position: absolute;
+    position: fixed;
     right: 10px;
     padding: 10px;
     text-align: right;
@@ -37,4 +38,11 @@ footer{
 .left-block{
     position: absolute;
     width:30%;
+    z-index: 1;
+}
+.frame{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 2;
 }
